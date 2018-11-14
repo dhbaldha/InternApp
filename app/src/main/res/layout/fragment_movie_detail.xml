@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.fragments.MovieDetailFragment">
+
+
+    <ImageView
+        android:id="@+id/imageMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        tools:src="@tools:sample/avatars[14]" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageMain"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:id="@+id/layoutTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/LargeFontPrimaryDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Title" />
+
+            <TextView
+                android:id="@+id/txtTitle"
+                style="@style/LargeFontBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Title" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutReleaseYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layoutTitle"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/LargeFontPrimaryDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Release Year" />
+
+            <TextView
+                android:id="@+id/txtReleaseYear"
+                style="@style/LargeFontBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Release Year" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layoutReleaseYear"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/LargeFontPrimaryDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Rating" />
+
+            <TextView
+                android:id="@+id/txtRating"
+                style="@style/LargeFontBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Rating" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutGenre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layoutRating"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/LargeFontPrimaryDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Genre" />
+
+            <TextView
+                android:id="@+id/txtGenre"
+                style="@style/LargeFontBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                tools:text="Genre" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
